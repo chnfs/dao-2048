@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('daily') {
       steps {
-        build 'build1'
+        sh 'echo build'
       }
     }
     stage('deploy') {
