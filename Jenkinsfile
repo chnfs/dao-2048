@@ -9,7 +9,7 @@ pipeline {
             
           },
           "build2": {
-            sh 'build2'
+            sh 'echo build2'
             
           }
         )
