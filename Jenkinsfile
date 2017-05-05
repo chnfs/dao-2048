@@ -3,7 +3,16 @@ pipeline {
   stages {
     stage('daily') {
       steps {
-        sh 'echo build'
+        parallel(
+          "daily": {
+            sh 'echo build'
+            
+          },
+          "build2": {
+            sh 'build2'
+            
+          }
+        )
       }
     }
     stage('deploy') {
