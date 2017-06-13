@@ -25,5 +25,10 @@ pipeline {
         sh 'echo test'
       }
     }
+    stage('error') {
+      steps {
+        sh 'asdfasdfasdf'
+      }
+    }
   }
 }
