@@ -27,7 +27,16 @@ pipeline {
     }
     stage('error') {
       steps {
-        sh 'asdfasdfasdf'
+        parallel(
+          "error": {
+            sh 'asdfasdfasdf'
+            
+          },
+          "abc": {
+            sh 'aaaa'
+            
+          }
+        )
       }
     }
   }
