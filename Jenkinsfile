@@ -35,6 +35,10 @@ pipeline {
           "abc": {
             sh 'aaaa'
             
+          },
+          "test2": {
+            build 'test1'
+            
           }
         )
       }
