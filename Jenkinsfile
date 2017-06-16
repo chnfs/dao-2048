@@ -11,6 +11,10 @@ pipeline {
           "build2": {
             sh 'echo build2'
             
+          },
+          "test1": {
+            build 'test1'
+            
           }
         )
       }
