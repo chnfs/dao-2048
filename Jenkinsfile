@@ -38,6 +38,7 @@ pipeline {
           },
           "abc": {
             sh 'aaaa'
+            sh 'echo 123'
             
           },
           "test2": {
