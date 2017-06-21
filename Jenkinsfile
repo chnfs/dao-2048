@@ -37,7 +37,7 @@ pipeline {
             
           },
           "abc": {
-            sh 'aaaa'
+            sh 'echo aaaa'
             sh 'echo 123'
             
           },
